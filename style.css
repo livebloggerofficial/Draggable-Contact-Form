@@ -1,0 +1,77 @@
+.contact-icon {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  background: #0691df;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.draggable-contact-form {
+  width: 240px;
+  height: 360px;
+  background: #fff;
+  box-shadow: 0 8px 42px -11px rgba(0, 0, 0, 0.2);
+  font-family: "Roboto", sans-serif;
+  border-radius: 10px;
+  position: absolute;
+  right: 40px;
+  bottom: 130px;
+
+  opacity: 0;
+  pointer-events: none;
+}
+
+.draggable-contact-form.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.draggable-contact-form .drag-icon {
+  background: #82b8ff;
+  padding: 8px 24px;
+  border-radius: 10px;
+  display: flex;
+}
+
+.draggable-contact-form form {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  gap: 15px;
+}
+
+.draggable-contact-form form .form-title {
+  font-size: 20px;
+  margin: 0;
+}
+
+.draggable-contact-form form input[type="text"],
+.draggable-contact-form form textarea {
+  font-size: 16px;
+  background: #efefef;
+  border: none;
+  padding: 8px 24px;
+  font-family: "Roboto", sans-serif;
+}
+
+.draggable-contact-form form textarea {
+  resize: none;
+}
+
+.draggable-contact-form form .send-btn {
+  background: #0691df;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 12px;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 10px;
+  margin: 0 -16px -16px -16px;
+  cursor: pointer;
+}
